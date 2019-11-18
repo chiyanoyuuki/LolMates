@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Accueil">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/black"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/profilicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icone_50"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/pseudo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/acclvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="30"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="italic" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/boutons"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/holo_orange_light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/refreshgames"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/testbtn0"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="Refresh Data"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/findplayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/testbtn2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="Find Player"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/leaderboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/testbtn4"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="LeaderBoard"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/LiveGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/testbtn1"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="10dp"
+                    android:text="Live Game"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/matchhistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/testbtn2"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="10dp"
+                    android:text="Match History"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/testbtn6"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="10dp"
+                    android:text="Settings"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rankedimg0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.05"
+            android:scaleY="1.05"
+            android:tint="@android:color/holo_orange_light" />
+
+        <ImageView
+            android:id="@+id/rankedimg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/topecran"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CC000000"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/wins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#99000000"
+                        android:gravity="center"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/loses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#99000000"
+                        android:gravity="center"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/show2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top|center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:alpha="0"
+                android:background="#66FF0303"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="TextView"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/containfragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/containfragment2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80313131">
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/sablier2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sab"
+                android:tint="@android:color/background_dark"
+                android:translationX="15px"
+                android:translationY="15px" />
+
+            <ImageView
+                android:id="@+id/sablier"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sab" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

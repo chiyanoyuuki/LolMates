@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/changesumm"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/testbtn22"
+                    android:gravity="center|center_vertical"
+                    android:text="Change Summoner"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/reinit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/testbtn2"
+                    android:gravity="center|center_vertical"
+                    android:text="Reset Stats"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/testbtn22"
+                    android:gravity="center|center_vertical"
+                    android:text="Remove Ads"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/testbtn2"
+                    android:gravity="center|center_vertical"
+                    android:text="Contact Support"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/testbtn22"
+                    android:gravity="center|center_vertical"
+                    android:text="About"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/aboutscroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CC000000"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:id="@+id/linearabout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/abouttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:text="Hey guys ! :)\n\nI'm a 24yo dude playing League since the start of season 2. I've been trying to reach master as hard as I could but I only managed to reach the master promotion back in 2015.\n\nWhen I was tryharding, I though about a way to know which players played with me when I enter a game and how strong they can be. I also wanted a way to find new friends to play and have fun with, this is why today, I release this app :)"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <TextView
+                    android:id="@+id/abouttext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:text="The app is simple, you play your games, then refresh. Every single player has a score determined by his KDA, his Win/Lose ratio and the honors you give him on the app. You can add the  most efficient players if you want tryharders or just add the most honorable players you've encountered several times and enjoy League with them."
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <TextView
+                    android:id="@+id/abouttext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:text="When you enter loading screen, you can refresh the live game on the app and instantly see if you know some players in your game and how good they are. You can also decide to reach the top of the leaderboard on the app by improving your own stats game after game :)\n\Anyway, always be nice to each other, and enjoy your futures games ! :)"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>

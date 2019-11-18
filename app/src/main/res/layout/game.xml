@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/gamedate2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/black"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0DFFFFFF"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/black">
+
+            <ImageView
+                android:id="@+id/retourgame"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/retour" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/livemap2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/map_11" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livemode2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/black"
+                android:gravity="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/livedesc2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/black"
+                android:gravity="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/livebans12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:id="@+id/livebans22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/testbtn2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/liveteam12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0D3232FF"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/liveteam22"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0DFF3232"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

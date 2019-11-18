@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutrefresh2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10"
+            android:focusableInTouchMode="true"
+            android:hint="Search Player..."
+            android:inputType="textFilter"
+            android:maxLength="18" />
+
+        <TextView
+            android:id="@+id/buttonsearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/testbtn2"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@android:string/search_go"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/black"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/schampion"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/black"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/spseudo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/testbtn22"
+                android:gravity="center"
+                android:textColor="#FFBB88FF"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/sscore"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/swin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingEnd="10dp"
+                    android:gravity="end"
+                    android:textColor="#5AFF5A"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/slose"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:textColor="#FF5A5A"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shonor"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingEnd="5dp"
+                android:gravity="end"
+                android:textColor="#BBFFBB"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sscore2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingEnd="5dp"
+                android:gravity="end"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sclassement"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingEnd="5dp"
+                android:gravity="end"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/testbtn2" />
+
+    <FrameLayout
+        android:id="@+id/framelay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="400dp">
+
+        <TextView
+            android:id="@+id/message2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:text="Search a player name above to see which games you've played with him..."
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <ScrollView
+            android:id="@+id/historique2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black"
+            android:gravity="center"
+            android:text="Less than 1.0 KDA"
+            android:textColor="#FF5A5A"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black"
+            android:gravity="center"
+            android:text="More than 4.0 KDA"
+            android:textColor="#5AFF5A"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</LinearLayout>

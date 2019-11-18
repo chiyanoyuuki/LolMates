@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lol Mates</string>
+
+    <string-array name="regions">
+        <item>"EUW"</item>
+        <item>"EUN"</item>
+        <item>"NA"</item>
+        <item>"KR"</item>
+        <item>"LAS"</item>
+        <item>"LAN"</item>
+        <item>"JP"</item>
+        <item>"BR"</item>
+        <item>"OC"</item>
+        <item>"TR"</item>
+        <item>"RU"</item>
+    </string-array>
+</resources>

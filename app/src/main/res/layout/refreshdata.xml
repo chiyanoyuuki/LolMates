@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutrefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/normalgames"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/black"
+            android:gravity="center"
+            android:text="Blind/Draft Games"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/soloqgames"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/none"
+            android:gravity="center"
+            android:text="Ranked Solo/Duo"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/flexgames"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/black"
+            android:gravity="center"
+            android:text="Ranked Flex"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/black"
+        android:minHeight="400dp">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:text="No game charged yet, refresh for checking the 8 last games in the"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:visibility="invisible" />
+
+        <ScrollView
+            android:id="@+id/historique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black"
+            android:gravity="center"
+            android:text="Less than 1.0 KDA"
+            android:textColor="#FF5A5A"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black"
+            android:gravity="center"
+            android:text="More than 4.0 KDA"
+            android:textColor="#5AFF5A"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</LinearLayout>
