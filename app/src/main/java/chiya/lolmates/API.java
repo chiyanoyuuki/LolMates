@@ -6,7 +6,6 @@ public class API
 {
     private Accueil main;
     private String REGION;
-    private final String KEY = "RGAPI-2338a871-5468-40fd-a1c3-a320e031af3c";
 
     public API(Accueil main)
     {
